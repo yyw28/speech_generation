@@ -1,0 +1,49 @@
+<speak>
+    Take One - Strong Emphasis on Subject <break time="1s"/>
+
+    My favorite superhero is <emphasis level="strong"> the Flash </emphasis> But <emphasis level="strong">Spiderman</emphasis> and <emphasis level="strong">Thor</emphasis> are a close second <break time="1s"/>
+
+    Take Two - Moderate Emphasis on Subject <break time="1s"/>
+
+    My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/>
+
+    Take Three - Reduced Emphasis On Subject <break time="1s"/>
+
+    My favorite superhero is <emphasis level="reduced"> the Flash </emphasis> But <emphasis level="reduced">Spiderman</emphasis> and <emphasis level="reduced">Thor</emphasis> are a close second <break time="1s"/>
+
+    Adjusting Pitch
+
+    Take One - Moderate Emphasis on Subject with Default Pitch<break time="1s"/>
+
+    <prosody pitch="default"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+
+    Take Two -  Moderate Emphasis on Subject with High Pitch <break time="1s"/>
+
+    <prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+
+    Take Three -  Moderate Emphasis on Subject with Medium Pitch <break time="1s"/>
+
+    <prosody pitch="medium"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+
+    Take Four -  Moderate Emphasis on Subject with Low Pitch <break time="1s"/>
+
+    <prosody pitch="low"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody> 
+
+    Moderate and default seem to be very similar. They seem to be very robotic. Whereas low pitch seems to be a bit monotonous. Although, high pitch adds tone to the subject its a bit off. However, based on those 4 i think that high pitch is very good.
+
+    Adjusting Speaking Rate
+
+    Take One - Moderate Emphasis on Subject with High Pitch and Slow speaking rate <break time="1s"/>
+
+    <prosody rate="slow"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>  
+
+    Take Two - Moderate Emphasis on Subject with High Pitch and Medium speaking rate <break time="1s"/>
+
+    <prosody rate="medium"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>  
+
+    Take Three - Moderate Emphasis on Subject with High Pitch and Fast speaking rate <break time="1s"/>
+
+    <prosody rate="fast"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>  
+
+    Fast rate is certainly ruled out, it sounds like youtube on two times speed. Whereas moderate and slow are comparable. I think moderate might be better but I imagine if i had picked reduced emphasis slow may have been a winner in that case.
+</speak>

@@ -1,0 +1,49 @@
+strong_emphasis.mp3
+<speak>
+    My favorite superhero is <emphasis level="strong"> the Flash </emphasis> But <emphasis level="strong">Spiderman</emphasis> and <emphasis level="strong">Thor</emphasis> are a close second <break time="1s"/>
+</speak>
+
+moderate_emphasis.mp3
+<speak>
+    My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/>
+</speak>
+
+reduced_emphasis.mp3
+<speak>
+    My favorite superhero is <emphasis level="reduced"> the Flash </emphasis> But <emphasis level="reduced">Spiderman</emphasis> and <emphasis level="reduced">Thor</emphasis> are a close second <break time="1s"/>
+</speak>
+
+moderate_emphasis_w_default_pitch.mp3
+<speak>
+    <prosody pitch="default"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+</speak>
+
+moderate_emphasis_w_high_pitch.mp3
+<speak>
+    <prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+</speak>
+
+moderate_emphasis_w_medium_pitch.mp3
+<speak>
+    <prosody pitch="medium"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody>
+</speak>
+
+moderate_emphasis_w_low_pitch.mp3
+<speak>
+    <prosody pitch="low"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody> 
+</speak>
+
+moderate_emphasis_w_default_pitch_and_slow_speaking_rate.mp3
+<speak>
+    <prosody rate="slow"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>  
+</speak>
+
+moderate_emphasis_w_default_pitch_and_medium_speaking_rate.mp3
+<speak>
+    <prosody rate="medium"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>  
+</speak>
+
+moderate_emphasis_w_default_pitch_and_high_speaking_rate.mp3
+<speak>
+    <prosody rate="fast"><prosody pitch="high"> My favorite superhero is <emphasis level="moderate"> the Flash </emphasis> But <emphasis level="moderate">Spiderman</emphasis> and <emphasis level="moderate">Thor</emphasis> are a close second <break time="1s"/></prosody></prosody>
+</speak>
