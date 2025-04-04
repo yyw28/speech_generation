@@ -1,0 +1,69 @@
+# Initialize a DataFrame for the new summary output
+summary_data = {
+    "survey": results_df["Survey"] if "Survey" in results_df.columns else results_df.index,
+    "Q1_h": [],
+    "Q1_l": [],
+    "Q1": [],
+    "Q2_h": [],
+    "Q2_l": [],
+    "Q2": [],
+    "Q3_h": [],
+    "Q3_l": [],
+    "Q3": [],
+    "Q4_h": [],
+    "Q4_l": [],
+    "Q4": [],
+    "Q5_h": [],
+    "Q5_l": [],
+    "Q5": [],
+}
+
+# Helper to extract responses
+def extract_group_data(group_prefix):
+    high = []
+    low = []
+    chosen = []
+
+    for idx in results_df.index:
+        high_vals = []
+        low_vals = []
+        chosen_val = ""
+
+        # Collect high (odd), low (even) values
+        for i in range(1, 13):
+            q_col = f"{group_prefix}.{i}"
+            if q_col in results_df.columns:
+                val = results_df.at[idx, q_col]
+                if isinstance(val, str) and val.strip():
+                    if i % 2 == 1:
+                        high_vals.append(val.strip())
+                    else:
+                        low_vals.append(val.strip())
+
+        # Collect the selected speaker from .1 columns (QX.4.2.1, etc.)
+        for i in range(2, 13, 2):
+            answer_col = f"{group_prefix}.{i}.1"
+            if answer_col in results_df.columns:
+                val = results_df.at[idx, answer_col]
+                if isinstance(val, str) and val.strip():
+                    chosen_val = val.strip()
+
+        high.append(" | ".join(high_vals))
+        low.append(" | ".join(low_vals))
+        chosen.append(chosen_val)
+
+    return high, low, chosen
+
+# Populate for Q1 to Q5
+for i in range(1, 6):
+    group_prefix = f"Q{i}.4"
+    h, l, chosen = extract_group_data(group_prefix)
+    summary_data[f"Q{i}_h"] = h
+    summary_data[f"Q{i}_l"] = l
+    summary_data[f"Q{i}"] = chosen
+
+# Convert to DataFrame
+summary_df = pd.DataFrame(summary_data)
+
+# Show the new summary DataFrame
+tools.display_dataframe_to_user(name="Survey Summary", dataframe=summary_df)
