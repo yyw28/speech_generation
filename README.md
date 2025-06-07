@@ -21,3 +21,4 @@ temp_generate_combinations.py: generate speech stimuli
 collected_ratings includes all collected ratings from 6 experiments
 
 
+If you have any questions about data or code, please reach out to yyu4@gradcenter.cuny.edu
