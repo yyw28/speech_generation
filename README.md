@@ -18,7 +18,7 @@ Note: The audio name: q10_F_saved_audio_files_wav corresponds to text 10, female
 temp_generate_combinations.py and aws_handler.py are main codes to generate speech stimuli
 
 ## Collected ratings
-collected_ratings includes all collected ratings from 6 experiments. The rating is average trustworthy rating from unique 5 raters.  
+collected_ratings includes all collected ratings from 6 experiments. For example, csv file name started with 'processed_df_' has the average of trustworthy ratings from unique 5 raters for each audio clip.  
 
 
 If you have any questions about data or code, please reach out to yyu4@gradcenter.cuny.edu
