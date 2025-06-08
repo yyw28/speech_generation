@@ -16,7 +16,7 @@ def create_client() -> Session.client:
     
     return polly_client
 
-def get_ssml_text(ssml_file_name = "speech.ssml") -> str:
+def get_ssml_text(ssml_file_name = "./ssmls/speech_rev.ssml") -> str:
     ssml_file = open(ssml_file_name)
     text: str = ""
     
@@ -37,7 +37,7 @@ def create_speech(polly: Session.client, text: str) -> any:
 
     try:
         response = polly.synthesize_speech(
-            VoiceId='Joanna',
+            VoiceId='Matthew',
             OutputFormat='mp3',
             TextType='ssml',
             Text=text
@@ -46,6 +46,9 @@ def create_speech(polly: Session.client, text: str) -> any:
         print(error)
 
     return response 
+
+temp_dir = gettempdir()
+print("Temporary directory:", temp_dir)
 
 def save_response(save_file: str, response: any) -> bool:
     """
@@ -86,12 +89,12 @@ def save_response(save_file: str, response: any) -> bool:
 if __name__ == '__main__':
     polly_client: Session.client = create_client()
     text = get_ssml_text()
-    response = create_speech(polly_client, text)
+    #response = create_speech(polly_client, text)
     
-    if not response:
-        print("Failed to generate speech, exiting")
-        sys.exit(-1)
+    #if not response:
+       #print("Failed to generate speech, exiting")
+       #sys.exit(-1)
         
-    save_response("different_settings.mp3", response)
+    #save_response("different_settings.mp3", response)
         
         
