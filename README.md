@@ -15,7 +15,7 @@ Recommendation-based speech clips are saved under these three folders:
 Note: The audio name: q10_F_saved_audio_files_wav corresponds to text 10, female speaker
 
 ## Code
-temp_generate_combinations.py: generate speech stimuli
+temp_generate_combinations.py and aws_handler.py are main codes to generate speech stimuli
 
 ## Collected ratings
 collected_ratings includes all collected ratings from 6 experiments
