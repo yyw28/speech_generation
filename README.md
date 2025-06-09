@@ -23,7 +23,7 @@ collected_ratings includes all collected ratings from 6 experiments; rec == reco
 1. csv file name started with 'processed_df_' has the average of trustworthy ratings from unique 5 raters for each audio clip.
 2. csv file name started with 'speaker' has the rater info.
 3. csv file name started with 'aggregated_df_tipi_' has the aggregated information for raters and their ratings info.
-
+4. Pairwise_Preference_Test.csv has the data for Section 9: Pairwise Preference Test for Lexical Style Under Trustworthy Acoustic Conditions.
 
 
 If you have any questions about data or code, please reach out to yyu4@gradcenter.cuny.edu
