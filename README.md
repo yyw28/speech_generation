@@ -16,11 +16,13 @@ Note: The audio name: q10_F_saved_audio_files_wav corresponds to text 10, female
 
 ## Code
 temp_generate_combinations.py and aws_handler.py are main codes to generate speech stimuli
+analysis_script folder has analysis.ipynb file to analysis code and results, you need to replace dataset to generate corresponding results
 
 ## Collected ratings
-collected_ratings includes all collected ratings from 6 experiments. 
+collected_ratings includes all collected ratings from 6 experiments; rec == recommendation, q == question, pol == polite, hum = humor.
 1. csv file name started with 'processed_df_' has the average of trustworthy ratings from unique 5 raters for each audio clip.
 2. csv file name started with 'speaker' has the rater info.
+3. csv file name started with 'aggregated_df_tipi_' has the aggregated information for raters and their ratings info.
 
 
 
